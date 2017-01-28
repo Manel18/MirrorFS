@@ -1,9 +1,13 @@
 # MirrorFS
 The simplest filesystem one can do with FUSE. Just mirror the operations done on the mount directory to another directory.
 
-Dependencies: fuse
+Dependencies:
 
-Compile: make
+* fuse
+
+Compile:
+
+* make
 
 Run (provided that the mount and loop directory exist):
 

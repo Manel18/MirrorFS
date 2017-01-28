@@ -7,15 +7,18 @@ Dependencies:
 
 Compile:
 
-* make
+```
+$ make
+```
 
-Run (provided that the mount and loop directory exist):
+Run (provided that /tmp/mount and /tmp/loop directory exist):
 
-mountdir = /tmp/mount (for example)
-rootdir = /tmp/loop (for example)
-
+```
 ./mirrorfs mountdir -omodules=subdir,subdir=rootdir -oallow_other
+```
 
 If you want to see the logs as you perform operations (different terminals), just add the -f flag:
 
+```
 ./mirrorfs -f mountdir -omodules=subdir,subdir=rootdir -oallow_other
+```
